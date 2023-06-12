@@ -1,0 +1,188 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Launch shapetest",
+            "request": "launch",
+            "mainClass": "Java.shapetest",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Book",
+            "request": "launch",
+            "mainClass": "Java.Book",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cylinder",
+            "request": "launch",
+            "mainClass": "Java.Cylinder",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Circle",
+            "request": "launch",
+            "mainClass": "Java.Circle",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch complex",
+            "request": "launch",
+            "mainClass": "Java.complex",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch UDP",
+            "request": "launch",
+            "mainClass": "Java.UDP",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch DownloadFileByURL",
+            "request": "launch",
+            "mainClass": "Java.DownloadFileByURL",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleDBMSFrm",
+            "request": "launch",
+            "mainClass": "Java.SimpleDBMSFrm",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch TextFrame",
+            "request": "launch",
+            "mainClass": "Java.TextFrame",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Calculator$number",
+            "request": "launch",
+            "mainClass": "Java.Calculator$number",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch JTextAreaTester",
+            "request": "launch",
+            "mainClass": "Java.JTextAreaTester",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Calculator",
+            "request": "launch",
+            "mainClass": "Java.Calculator",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Action1",
+            "request": "launch",
+            "mainClass": "Java.Action1",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch Iris",
+            "request": "launch",
+            "mainClass": "Java.Iris",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch expp",
+            "request": "launch",
+            "mainClass": "Java.expp",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch copytest",
+            "request": "launch",
+            "mainClass": "Java.copytest",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch yesyes",
+            "request": "launch",
+            "mainClass": "Java.yesyes",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch yesyes",
+            "request": "launch",
+            "mainClass": "Javass.yesyes",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch test1",
+            "request": "launch",
+            "mainClass": "Java.test1",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch BufferedReaderTester",
+            "request": "launch",
+            "mainClass": "Java.BufferedReaderTester",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileWriterTester.java",
+            "request": "launch",
+            "mainClass": "Java.FileWriterTester",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Java.test",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "type": "java",
+            "name": "Launch UseThrows",
+            "request": "launch",
+            "mainClass": "Java.UseThrows",
+            "projectName": "CPP_ac769114"
+        },
+        {
+            "name": "(gdb) Launch",
+            "preLaunchTask": "build",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\Users\\Scott\\Documents\\Tencent Files\\1172720089\\FileRecv\\mingw64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

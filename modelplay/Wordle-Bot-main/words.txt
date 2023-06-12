@@ -1,0 +1,13 @@
+Greetings! Recently, the Wordle game has become a new favorite on Twitter. People have been sharing their game scores and strategies on Twitter, causing a "wordle" craze. You have raised many valuable questions about wordle and provided us with user gameplay data, hoping that we can solve them. After processing and analyzing the dataset, modeling, and prediction, we have solved the relevant problems. Below, I will summarize the conclusions we have studied, discuss the research process, and share our thoughts.
+
+The attractiveness of the game shows a trend of a peak followed by a continuous decline, indicating that the attractiveness of the game to players will gradually weaken over time, and this trend may continue.
+
+Word attributes do have a significant impact on the percentage of scores reported that were played in Hard Mode(Hereinafter referred to as "PIHM"). Different word attributes will have different effects on players' performance in the game, such as the number of identical letters, difficulty level, and word frequency. Different combinations of these attributes may lead to significant differences in players' performance in the game.
+
+Word attributes have an impact on the difficulty of guessing words. Among the word attributes, forward entropy, inverse entropy, difficulty level, and word frequency have a significant impact. Different combinations of these attributes will lead to significant differences in the difficulty of guessing words.
+
+Word attributes are correlated with the classification being studied, and some attributes are significantly correlated with the classification. Therefore, such analysis helps us use appropriate word attributes in classification problems and can improve our classification accuracy.
+
+Players tend to have a "perseverance" in trying. We found that the distribution of players who try six times and those who try seven times is highly correlated.
+
+First of all, regarding the first conclusion, combined with our data analysis, it shows that from January 7, 2022, to December 31, the number of reports submitted for the Wordle game showed an overall trend of first increasing and then decreasing. We found that the number of reports submitted in January and February 2022 was relatively high, and the number of reports submitted gradually decreased from May, finally stabilizing in July.

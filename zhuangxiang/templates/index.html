@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三维装箱参数输入</title>
+</head>
+<body>
+	<h1>三维装箱参数输入</h1>
+	<form action="/packing" method="post">
+		<label for="type">货物类型：</label>
+		<input type="text" id="type" name="type"><br><br>
+
+		<label for="num">货物数量：</label>
+		<input type="number" id="num" name="num"><br><br>
+
+		<label for="typeof">货物形状：</label>
+		<select id="typeof" name="typeof">
+			<option value="cube">立方体</option>
+			<option value="cylinder">圆柱体</option>
+		</select><br><br>
+
+		<label for="width">货物宽度：</label>
+		<input type="number" id="width" name="width"><br><br>
+
+		<label for="height">货物高度：</label>
+		<input type="number" id="height" name="height"><br><br>
+
+		<label for="depth">货物深度：</label>
+		<input type="number" id="depth" name="depth"><br><br>
+
+		<label for="weight">货物重量：</label>
+		<input type="number" id="weight" name="weight"><br><br>
+
+		<label for="level">装载优先级：</label>
+		<input type="number" id="level" name="level"><br><br>
+
+		<label for="loadbear">货物承重：</label>
+		<input type="number" id="loadbear" name="loadbear"><br><br>
+
+		<label for="re">货物放置能否翻转：</label>
+		<input type="checkbox" id="re" name="re" value="true"><br><br>
+
+		<label for="color">货物颜色：</label>
+		<input type="text" id="color" name="color"><br><br>
+
+		<input type="submit" value="提交">
+	</form>
+
+	<div id="result"></div>
+
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+			const formData = new FormData(event.target);
+			const responseData = await fetch('/packing', {
+				method: 'POST',
+				body: formData
+			}).then(response => response.json());
+			const resultDiv = document.querySelector('#result');
+			if (responseData.error) {
+				resultDiv.innerHTML = `<p>${responseData.error}</p>`;
+			} else {
+				let html = `<p>三维装箱结果：</p><ul>`;
+				const results = responseData.results;
+				for (let i = 0; i < results.length; i++) {
+					html += `<li>${results[i]}</li>`;
+				}
+				html += `</ul>`;
+				resultDiv.innerHTML = html;
+			}
+		});
+	</script>
+</body>
+</html>
