@@ -40,7 +40,7 @@ def cratch():
             try:
                 txt = driver.find_element(By.XPATH, '//*[@class="artTxt"]').text
             except NoSuchElementException:
-                txt = f"(maybe images, you can see it on{link})"  # 如果无法定位到日期元素，将txt设置为空字符串或其他默认值
+                txt = f"(maybe images, you can see it on {link})"  # 如果无法定位到日期元素，将txt设置为空字符串或其他默认值
 
         words.append((result,titles[result],dates[result],txt))
         counts += 1
