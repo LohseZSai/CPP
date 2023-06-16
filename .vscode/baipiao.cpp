@@ -34,7 +34,7 @@ int main(int argc,char** argv)
         sprintf(cmd,"start %s", argv[2]);
         system(cmd);
     } else {
-        system("start Typora.exe");
+        system("start C:/Users/Scott/AppData/Local/Programs/Typora/Typora.exe");
     }
     sprintf(cmd,"date %s",date_now);
     _sleep(3000);
